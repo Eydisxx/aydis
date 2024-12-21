@@ -20,13 +20,13 @@ license="MIT"
 [[mods]] #mandatory
 
 # The modid of the mod
-modId="jukeboxplus" #mandatory
+modId="aydis" #mandatory
 
 # The version number of the mod
 version="1.0.0" #mandatory
 
 # A display name for the mod
-displayName="JukeboxPlus" #mandatory
+displayName="aydis" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -41,7 +41,7 @@ displayName="JukeboxPlus" #mandatory
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="Hendrik" #optional
+authors="aydis" #optional
 
 # Display Test controls the display for your mod in the server connection screen
 # MATCH_VERSION means that your mod will cause a red X if the versions on client and server differ. This is the default behaviour and should be what you choose if you have server and client elements to your mod.
@@ -55,7 +55,7 @@ authors="Hendrik" #optional
 description="Eine Mod, die die Jukebox verbessert, mehrere Schallplatten abspielen kann."
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.jukeboxplus]] #optional
+[[dependencies.aydis]] #optional
 # the modid of the dependency
 modId="forge" #mandatory
 # Does this dependency have to exist - if not, ordering below must be specified
@@ -68,7 +68,7 @@ ordering="NONE"
 side="BOTH"
 
 # Here's another dependency
-[[dependencies.jukeboxplus]]
+[[dependencies.aydis]]
 modId="minecraft"
 mandatory=true
 # This version range declares a minimum of the current Minecraft version up to but not including the next major version

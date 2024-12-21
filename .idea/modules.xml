@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aydis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/aydis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aydis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/aydis.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.aydis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.aydis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.aydis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.aydis.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.jukeboxplus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.jukeboxplus.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.examplemod.jukeboxplus.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.examplemod.jukeboxplus.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jukeboxplus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jukeboxplus.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jukeboxplus.test.iml" filepath="$PROJECT_DIR$/.idea/modules/jukeboxplus.test.iml" />
     </modules>
