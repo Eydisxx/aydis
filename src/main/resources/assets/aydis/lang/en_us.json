@@ -1,7 +1,6 @@
 {
-  "item.minecraft.potion.effect.crying_potion": "Crying Potion",
-  "item.minecraft.splash_potion.effect.crying_potion": "Splash Crying Potion",
-  "item.minecraft.lingering_potion.effect": "Lingering Crying Potion",
-  "creative.course_tab": "Course Tab",
+
+  "item.aydis.crying_bottle": "Crying Bottle",
+  "creativetab.course_tab": "Course Tab",
   "effect.aydis.suppressed": "Suppressed"
 }

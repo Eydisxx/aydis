@@ -1,11 +1,11 @@
-package com.aydis;
+package com.aydis.aydismod;
 
-import com.aydis.effect.ModEffects;
-import com.aydis.potion.BetterBrewingRecipe;
-import com.aydis.potion.ModPotions;
+import com.aydis.aydismod.effect.ModEffects;
+import com.aydis.aydismod.potion.BetterBrewingRecipe;
+import com.aydis.aydismod.potion.ModPotions;
 import com.mojang.logging.LogUtils;
-import com.aydis.item.ModCreativeModeTabs;
-import com.aydis.item.ModItems;
+import com.aydis.aydismod.item.ModCreativeModeTabs;
+import com.aydis.aydismod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
@@ -45,7 +45,7 @@ public class  aydis
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-    BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.CRYING_OBSIDIAN,ModPotions.CRYING_POTION.get()));
+        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.CRYING_OBSIDIAN,ModPotions.CRYING_BOTTLE.get()));
     }
 
     // Add the example block item to the building blocks tab
