@@ -1,7 +1,6 @@
 package com.aydis.aydismod.item;
 
 import com.aydis.aydismod.aydis;
-import com.aydis.aydismod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,20 +17,15 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> COURSE_TAB = CREATIVE_MODE_TABS.register("course_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> {
-                        // Create an ItemStack with the Crying Potion
-                        ItemStack cryingPotion = new ItemStack(Items.POTION);
-                        cryingPotion.getOrCreateTag().putString("Potion", ModPotions.CRYING_BOTTLE.getId().toString());
-                        return cryingPotion;
+                        // Verwende das bereits registrierte Crying Bottle Item
+                        return new ItemStack(ModItems.CRYING_BOTTLE.get());
                     })
-
                     .title(Component.translatable("creativetab.course_tab"))
                     .displayItems((displayParameters, output) -> {
-                        // Add the Crying Potion to the Creative Tab
-                        ItemStack cryingPotion = new ItemStack(Items.POTION);
-                        cryingPotion.getOrCreateTag().putString("Potion", ModPotions.CRYING_BOTTLE.getId().toString());
-                        output.accept(cryingPotion);
+                        // Füge das Crying Bottle Item dem Creative Tab hinzu
+                        output.accept(ModItems.CRYING_BOTTLE.get());
 
-                        // Uncomment to add blocks or other items to the tab
+                        // Füge hier ggf. weitere Items oder Blöcke hinzu
                         // output.accept(ModBlocks.PURPURONYXSTONE_STAIRS.get());
                     }).build());
 
