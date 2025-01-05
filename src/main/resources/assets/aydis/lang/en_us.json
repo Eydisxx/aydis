@@ -1,6 +1,6 @@
 {
 
-  "item.aydis.crying_bottle": "Crying Bottle",
+  "item.aydis.crying_bottle.effect.empty": "Crying Bottle",
   "creativetab.course_tab": "Course Tab",
   "effect.aydis.suppressed": "Suppressed"
 }

@@ -1,11 +1,8 @@
 package com.aydis.aydismod.item;
 
-import com.aydis.aydismod.aydis;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import com.aydis.aydis;
+import com.aydis.aydismod.event.InfinitePowder;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,16 +19,16 @@ public class ModItems {
 
     // Item crying bottle (Potion Item)
     public static final RegistryObject<Item> CRYING_BOTTLE = ITEMS.register("crying_bottle",
-            () -> new Item(new Item.Properties()) {
-                @Override
-                public InteractionResult useOn(UseOnContext context) {
-                    // Get Darkness-Effect
-                    if (!context.getLevel().isClientSide()) {
-                        context.getPlayer().addEffect(new MobEffectInstance(MobEffects.DARKNESS, 400, 3));
-                    }
-                    return InteractionResult.sidedSuccess(context.getLevel().isClientSide());
-                }
-            });
+            () -> new PotionItem(new Item.Properties().stacksTo(1).craftRemainder(Items.GLASS_BOTTLE))); // Add other properties as needed
+
+    // Item Everbloom Powder
+    public static final RegistryObject<Item> EVERBLOOM_POWDER = ITEMS.register("everbloom_powder",
+            () -> new InfinitePowder(new Item.Properties()));
+
+
+
+
+
 
     public static void register(IEventBus eventBUS) {
         ITEMS.register(eventBUS);

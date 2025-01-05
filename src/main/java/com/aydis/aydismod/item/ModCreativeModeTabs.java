@@ -1,6 +1,6 @@
 package com.aydis.aydismod.item;
 
-import com.aydis.aydismod.aydis;
+import com.aydis.aydis;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

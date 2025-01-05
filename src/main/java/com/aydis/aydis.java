@@ -1,4 +1,4 @@
-package com.aydis.aydismod;
+package com.aydis;
 
 import com.mojang.logging.LogUtils;
 import com.aydis.aydismod.item.ModCreativeModeTabs;
@@ -33,6 +33,8 @@ public class  aydis
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+
 
     }
 
